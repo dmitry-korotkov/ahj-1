@@ -1,0 +1,18 @@
+img {
+    display: none;
+}
+
+#board {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 20px;
+}
+
+.field {
+    background-color: gold;
+}
+
+.appearance {
+    display: block;
+}
