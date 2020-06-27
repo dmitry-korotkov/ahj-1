@@ -1,0 +1,1 @@
+img{display:none}#board{display:grid;grid-template-rows:100px 100px 100px 100px;grid-template-columns:100px 100px 100px 100px;grid-gap:20px}#gameOver{display:none;font-size:30px}#button{margin:20px 0}.field{background-color:gold}.appearance{display:block}
