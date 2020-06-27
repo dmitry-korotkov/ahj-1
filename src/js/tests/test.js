@@ -1,4 +1,4 @@
-import getRandomInt from '../app';
+import getRandomInt from '../GetRandomNumber';
 
 test('get random number', () => {
   const randomInt = getRandomInt(25);
