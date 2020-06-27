@@ -1,14 +1,12 @@
 /* eslint-disable linebreak-style */
-const imgs = Array.from(document.getElementsByTagName('img'));
-export default function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-setInterval(() => {
-  const fieldappearance = getRandomInt(imgs.length);
-  for (const img of imgs) {
-    if (img.classList.contains('appearance')) {
-      img.classList.remove('appearance');
+const count = document.getElementById('count');
+const fields = document.querySelectorAll('.field');
+
+for (const field of fields) {
+  field.addEventListener('click', () => {
+    if (field.querySelector('img').classList.contains('appearance')) {
+      count.textContent = Number(count.textContent) + 1;
+      field.querySelector('img').classList.remove('appearance');
     }
-  }
-  imgs[fieldappearance].classList.add('appearance');
-}, 1000);
+  });
+}
